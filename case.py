@@ -5,6 +5,7 @@ from github_page import GithubPage
 import time
 
 
+
 class GithubLoginTest(unittest.TestCase):
 
     def setUp(self):
@@ -18,7 +19,7 @@ class GithubLoginTest(unittest.TestCase):
         page.enter_password(values.password)
         page.click_sign_in_btn()
 
-    time.sleep(2)
+    time.sleep(4)
 
     def tearDown(self):
             self.driver.quit()
